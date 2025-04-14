@@ -1,0 +1,266 @@
+/* Section Reuse */
+section {
+  padding: 3rem 2rem;
+}
+
+.container.vertical {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Why Choose */
+.why-choose {
+  background: #fff8f0;
+}
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+.feature-box {
+  flex: 1 1 250px;
+  padding: 1.5rem;
+}
+.feature-box i {
+  font-size: 2rem;
+  color: #FF6B6B;
+}
+
+/* How It Works */
+.how-it-works {
+  background: #f0faff;
+}
+.steps {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+.step {
+  flex: 1 1 200px;
+  padding: 1rem;
+}
+.step span {
+  display: inline-block;
+  background: #FF6B6B;
+  color: white;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+/* Testimonials */
+.testimonials {
+  background: #fefefe;
+}
+.testimonial-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.testimonial {
+  background: #fff0f0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* Newsletter */
+.newsletter {
+  background: #fff8f0;
+}
+.newsletter-form {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.newsletter-form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+.newsletter-form button {
+  padding: 0.8rem 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .features, .steps, .testimonial-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+.main-header {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FF6B6B;
+}
+
+.icons i {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff8f0;
+  padding: 2rem 0;
+}
+
+.hero-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+  color: #333;
+}
+.hero-content h1 span {
+  color: #FF6B6B;
+}
+
+.hero-content p {
+  margin: 1rem 0 2rem;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  background-color: #FF6B6B;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #e25454;
+}
+
+.hero-image {
+  flex: 1;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+  .nav-links {
+    display: none; /* For simplicity: mobile nav can be added later */
+  }
+}
+/* Video Section */
+.video-section {
+  background-color: #fef9f5;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.video-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.video-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
